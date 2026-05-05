@@ -46,6 +46,23 @@ Compare four unsupervised anomaly detection algorithms to identify odometer frau
 Dataset is not included. Place it here:  
 `MOT/mot_2018_2024_10percent_by_vehicle.csv.gz`
 
+--- 
+## Libraries Used  
+
+- pandas — data processing  
+- numpy — numerical operations  
+- scikit-learn — machine learning models  
+- matplotlib / seaborn — visualisation  
+- matplotlib-venn — model comparison  
+- joblib — saving and loading models  
+
+---
+## Requirements  
+
+- Python 3.8+  
+- Google Colab or Jupyter Notebook  
+- 2GB RAM minimum for the 40,000 vehicle sample  
+
 ---
 
 ## How it Works  
@@ -86,6 +103,15 @@ Test dataset includes:
 - Negative mileage cases in the dataset 
 
 ---
+## Key Concepts  
+
+- **Clocked Commuter:** A fraudulent vehicle where the odometer has been partially rolled back. Mileage increases slightly but remains far below its historical trend.  
+
+- **Recall:** The proportion of actual fraud cases detected. A recall of 90% means 9 out of 10 fraud cases are identified.  
+
+- **Precision:** The proportion of detected fraud cases that are truly fraudulent. High precision reduces false accusations.  
+
+---
 
 ## Results  
 
@@ -109,44 +135,14 @@ Test dataset includes:
 
 3. Install dependencies (if running locally):
 
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn matplotlib-venn joblib
----
----
+```bash pip install pandas numpy scikit-learn matplotlib seaborn matplotlib-venn joblib
 
-## Libraries Used  
+ Author  
 
-- pandas — data processing  
-- numpy — numerical operations  
-- scikit-learn — machine learning models  
-- matplotlib / seaborn — visualisation  
-- matplotlib-venn — model comparison  
-- joblib — saving and loading models  
-
----
-
-## Requirements  
-
-- Python 3.8+  
-- Google Colab or Jupyter Notebook  
-- 2GB RAM minimum for the 40,000 vehicle sample  
-
----
-
-## Key Concepts  
-
-- **Clocked Commuter:** A fraudulent vehicle where the odometer has been partially rolled back. The mileage still increases slightly, but much less than its historical average, making it difficult to detect manually.  
-
-- **Recall:** The proportion of actual fraud cases correctly detected. A recall of 90% means 9 out of 10 fraud cases are identified.  
-
-- **Precision:** The proportion of detected fraud cases that are actually fraudulent. High precision means fewer false accusations.  
-
----
-
-## Author  
-
-**Irzam Latif**  
+Irzam Latif 
 University of Hertfordshire  
 Final Year Project — MSc Data Science  
 
 Dataset: DVSA MOT Data — UK Open Government Licence  
+
+
