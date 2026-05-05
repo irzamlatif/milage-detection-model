@@ -112,6 +112,8 @@ Test dataset includes:
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn matplotlib-venn joblib
 ---
+---
+
 ## Libraries Used  
 
 - pandas — data processing  
@@ -127,22 +129,24 @@ pip install pandas numpy scikit-learn matplotlib seaborn matplotlib-venn joblib
 
 - Python 3.8+  
 - Google Colab or Jupyter Notebook  
-- 2GB Ram minimum for the 40,000 vehicle sample
+- 2GB RAM minimum for the 40,000 vehicle sample  
+
 ---
+
 ## Key Concepts  
 
-- What is a Clocked Commuter? A fraudulent vehicle that has had its odometer partially roll back. The mileage still goes up slightly, but much less than the vehicle's own historical average making it hard to spot by eye. 
+- **Clocked Commuter:** A fraudulent vehicle where the odometer has been partially rolled back. The mileage still increases slightly, but much less than its historical average, making it difficult to detect manually.  
 
-- What is Recall? Out of all the actual frauds, how many did the model catch? A recall of 90% means it caught 9 out of 10. 
+- **Recall:** The proportion of actual fraud cases correctly detected. A recall of 90% means 9 out of 10 fraud cases are identified.  
 
-- What is Precision? Out of all the vehicles the model flagged as fraud. How many were actually fraudulent? High precision means fewer innocent drivers are falsely accused.
+- **Precision:** The proportion of detected fraud cases that are actually fraudulent. High precision means fewer false accusations.  
 
 ---
-## Author 
 
-Irzam Latif 
+## Author  
 
-University of Hertfordshire 
+**Irzam Latif**  
+University of Hertfordshire  
+Final Year Project — MSc Data Science  
 
-Final Year Project — Mse DataScience 
-Dataset: DVSA MOT data — UK Open Government Licence 
+Dataset: DVSA MOT Data — UK Open Government Licence  
